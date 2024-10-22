@@ -1,0 +1,14 @@
+<main class="main">
+
+    <h1 class="font__title">Listado de personas Star Wars</h1>
+
+    <ul class="list list__container">
+        @for( person of peopleList; track $index ){
+        <li> Nombre: {{ person.name }} </li>
+        <li> Naves espaciales: {{ person.starships }} </li>
+        <li> Cumpleaños: {{ person.birth_year }} </li>
+        }
+    </ul>
+
+
+</main>
